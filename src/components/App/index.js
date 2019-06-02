@@ -4,6 +4,8 @@ import './style.scss';
 import Header from '../Header';
 import Footer from '../Footer';
 import Home from '../pages/Home';
+import Counter from '../Counter';
+
 
 function App() {
 
@@ -11,7 +13,9 @@ function App() {
     <div className="app">
       <Header />
       <Home />
+      <Counter />
       <Footer />
+  
     </div>
   );
 }
