@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {NavLink} from 'react-router-dom';
 
 import './style.scss';
 
@@ -7,7 +7,12 @@ function Header () {
 
   return (
     <div className="header">
-      <h1> Hello Header</h1>
+      <ul>
+        <li><NavLink to="/" exact>Home</NavLink></li>
+        <li><NavLink to="/gallery">Gallery</NavLink></li>
+        <li><NavLink to="/photo">Photo</NavLink></li>
+        <li><NavLink to="/favorite">Favorite</NavLink></li> 
+      </ul>
       
     </div>
   );

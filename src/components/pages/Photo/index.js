@@ -7,7 +7,7 @@ function Photo() {
 
   return (
     <div className="photo">
-      <h1> Hello </h1>
+      <h1> Hello Photo</h1>
   
     </div>
   );

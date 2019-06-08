@@ -7,7 +7,7 @@ function Favorite() {
 
   return (
     <div className="favorite">
-      <h1> Hello </h1>
+      <h1> Hello Favorite </h1>
   
     </div>
   );

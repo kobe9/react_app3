@@ -7,7 +7,7 @@ function Gallery() {
 
   return (
     <div className="gallery">
-      <h1> Hello </h1>
+      <h1> Hello Gallery </h1>
   
     </div>
   );
