@@ -6,10 +6,10 @@ import './style.scss';
 function Footer() {
 
   return (
-    <div className="footer">
-      <h1> Hello Footer</h1>
-     
-    </div>
+    <footer>
+      <a href="#">Web developer Kozoriz</a>
+    </footer>
+
   );
 }
 

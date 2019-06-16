@@ -7,9 +7,9 @@ import { GET_PHOTO } from '../../../utils/PhoosApiService';
 function Photo(props) {
 
   const { match: { params: { photoId } }, setPhoto } = props;
-  
 
-    useEffect(() => {
+
+  useEffect(() => {
     GET_PHOTO(photoId).then(photo => {
       setPhoto(photo);
     });
@@ -24,11 +24,12 @@ function Photo(props) {
   }
 
   return (
-    <div className="photo">
-      <span>{likes}</span>
-      <i>{renderDate()}</i>
-      {urls && <img src={urls.thumb} alt={alt_description} />}
-      <p>{alt_description}</p>
+    <div className="main-photo">
+      <div className="photo-header">
+        <i>{renderDate()}</i>
+        <p>{alt_description}</p>
+      </div>
+      {urls && <img src={urls.regular} alt={alt_description} />}
     </div>
   );
 }
